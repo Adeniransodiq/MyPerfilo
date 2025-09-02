@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>King Bob$ Testimonials - Slider</title>
+
+  <!-- Swiper CSS CDN -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f8f8fc;
+      margin: 0;
+      padding: 60px 5%;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 50px;
+    }
+
+    .swiper {
+      padding-bottom: 50px;
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+    }
+
+    .testimonial-card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px 20px;
+      max-width: 350px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+      transition: transform 0.5s ease, box-shadow 0.5s ease;
+      transform-style: preserve-3d;
+    }
+
+    .testimonial-card:hover {
+      transform: rotateY(5deg) rotateX(3deg) scale(1.03);
+      box-shadow: 0 25px 45px rgba(0, 0, 0, 0.12);
+    }
+
+    .profile-pic {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 15px;
+      border: 5px solid #f7f7f7;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .profile-pic img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-header {
+      background: linear-gradient(90deg, #3d5afe 50%, #8e24aa 50%);
+      border-radius: 12px;
+      padding: 10px 0;
+      margin-bottom: 12px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .title {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 5px;
+      color: #333;
+      line-height: 1.4;
+    }
+
+    .stars {
+      text-align: center;
+      margin: 12px 0;
+    }
+
+    .stars i {
+      color: gold;
+    }
+
+    .quote {
+      font-style: italic;
+      font-size: 14px;
+      color: #444;
+      margin-top: 10px;
+      line-height: 1.6;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .quote::before {
+      content: "\f10d";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #3d5afe;
+    }
+
+    .quote::after {
+      content: "\f10e";
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      position: absolute;
+      right: 0;
+      bottom: -15px;
+      color: #8e24aa;
+    }
+
+    .social {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .social i {
+      font-size: 20px;
+      color: #4267B2;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .social i:hover {
+      transform: scale(1.2);
+    }
+
+    /* Navigation arrows */
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #3d5afe;
+    }
+
+    /* Pagination dots */
+    .swiper-pagination-bullet {
+      background: #8e24aa;
+      opacity: 0.5;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: #3d5afe;
+      opacity: 1;
+    }
+    
+  </style>
+</head>
+<body>
+    <!-- Header -->
+  <header>
+    <div class="logo tilt-3d">
+      <span class="dot"></span><span>King Bob$</span>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#">Services</a>
+      <a href="#">Projects</a>
+      <a href="#">Contact</a>
+      <a href="testimonials.html">Testimonials</a>
+    </nav>
+    <a class="hire-btn tilt-3d" href="#">Hire Me »</a>
+  </header>
+
+  <h2>What people say about king Bob$'s skills</h2>
+
+  <!-- Swiper Container -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      
+      <!-- Slides (Testimonials) -->
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="profile-pic"><img src="images (1).jpeg" alt="Mimi Marcus"></div>
+          <div class="card-header">Mimi Marcus</div>
+          <div class="title">Undergraduate<br>Blockchain Writer</div>
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="quote">Such a resourceful programmer. His websites are user-friendly and well-designed, showcasing his knack for making complex tasks simple.</p>
+          <div class="social"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="profile-pic"><img src="images (2).jpeg" alt="Mustapha Sani"></div>
+          <div class="card-header">Mustapha Sani</div>
+          <div class="title">Cybersecurity Expert<br>Programmer</div>
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="quote">King Bob$ is a dedicated frontend developer who crafts solutions that enhance people’s lives. His commitment to excellence is impressive.</p>
+          <div class="social"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="profile-pic"><img src="images (3).jpeg" alt="Adekunle Joshua"></div>
+          <div class="card-header">Adekunle Joshua</div>
+          <div class="title">Undergraduate<br>Programmer</div>
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="quote">Encountering King Bob$ has truly been a gift. His eagerness to share and clarify complex concepts is unmatched.</p>
+          <div class="social"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <div class="testimonial-card">
+          <div class="profile-pic"><img src="images (4).jpeg" alt="Zainab Bello"></div>
+          <div class="card-header">Zainab Bello</div>
+          <div class="title">UI/UX Designer<br>Creative Studio</div>
+          <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+          <p class="quote">Working with King Bob$ was seamless. His attention to design details and frontend precision elevated our entire project.</p>
+          <div class="social"><i class="fab fa-facebook"></i></div>
+        </div>
+      </div>
+
+      <!-- Add additional slides/testimonials here if needed -->
+
+    </div>
+
+    <!-- Navigation buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Init -->
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      spaceBetween: 30,
+      grabCursor: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev'
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true
+      },
+      breakpoints: {
+        768: {
+          slidesPerView: 2
+        },
+        1024: {
+          slidesPerView: 3
+        },
+        1400: {
+          slidesPerView: 4
+        }
+      }
+    });
+  </script>
+</body>
+</html>
