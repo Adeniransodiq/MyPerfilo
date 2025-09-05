@@ -585,6 +585,139 @@
         justify-content: center;
       }
     }
+    /* ======== RESPONSIVE MEDIA QUERIES ========= */
+
+@media (max-width: 1024px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .left-content, .right-content {
+    max-width: 100%;
+  }
+
+  .right-content {
+    margin-top: 30px;
+  }
+
+  .left-content h1 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .resume-btn, .play-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services-grid,
+  .more-services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 20px;
+  }
+
+  .project-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-section {
+    flex-direction: column;
+    padding: 20px 5%;
+  }
+
+  .contact-heading h2 {
+    font-size: 20px;
+    padding: 0 10px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-icons {
+    justify-content: center;
+  }
+
+  .footer-group {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left-content h1 {
+    font-size: 22px;
+  }
+
+  .left-content p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .contact-form-container {
+    padding: 20px;
+  }
+
+  .contact-form-container h3 {
+    font-size: 18px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+
+  footer {
+    padding: 20px 5%;
+  }
+}
+
   </style>
 </head>
 <body>
@@ -865,3 +998,4 @@
   </script>
 </body>
 </html>
+
